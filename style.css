@@ -4,10 +4,3 @@ a:visited {
     color: orange; 
    }
 
-   .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-  }
