@@ -23,7 +23,7 @@
   .grid-container {
     display: grid; /* Enable Grid layout */
     grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: repeat(4, auto); /* Four rows, height adjusts automatically to content */
+    grid-template-rows: repeat(5, auto); /* Five rows, height adjusts automatically to content */
     gap: 10px; /* Adds space between grid items */
     padding: 20px;
   }
