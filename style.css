@@ -1,39 +1,18 @@
-.image-container {
-    display: inline-block;
-    position: relative;
-  }
-
-  .image-container img {
-    display: block;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .image-container img.hidden {
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   /*Setting up the grid to make text appear inline with the image*/
   .grid-container {
     display: grid; /* Enable Grid layout */
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: repeat(5, auto); /* Five rows, height adjusts automatically to content */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Two equal-width columns, the min 0 prevents the images in other sections from blowing out the columns*/
+    grid-template-rows: repeat(2, auto); /* Five rows, height adjusts automatically to content */
+    justify-content: center;
     gap: 10px; /* Adds space between grid items */
     padding: 20px;
   }
 
   .grid-item {
     padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
+    border: 2px solid #000000;
   }
 
-  .hidden {
-    display: none; /* Completely hides the element */
+  body {
+    background-image: "background.jpg";
   }
