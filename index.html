@@ -174,11 +174,8 @@
 
     <div id="message-board" class="grid-item">
         <html-include src="./messages.html"></html-include>
-        <input name="message" id="meassage"><input type="submit" value="Submit" id="submission">
-      <script>
-        const messageBoard = document.getElementById("message-board")
-        messageBoard.addEventListener("submit", console.log("submitted"))
-      </script>
+        <input name="message" id="meassage">
+        <input type="submit" value="Submit" onclick="console.log('Submit button clicked directly')" >
     </div>
   </div>
 
