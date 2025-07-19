@@ -172,12 +172,12 @@
       </ul>
     </div>
 
-    <div class="grid-item">
+    <div id="message-board" class="grid-item">
         <html-include src="./messages.html"></html-include>
         <input name="message" id="meassage"><input type="submit" value="Submit" id="submission">
       <script>
-        const myButton = document.getElementById("submission")
-        myButton.addEventListener("submit", console.log("submitted"))
+        const messageBoard = document.getElementById("message-board")
+        messageBoard.addEventListener("submit", console.log("submitted"))
       </script>
     </div>
   </div>
