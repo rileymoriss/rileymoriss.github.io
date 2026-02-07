@@ -11,242 +11,253 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-image: url(background.jpg);">
-  <div><h1 align="center" style="font-family:'Courier New';font-size:30px"> Previously they were simply dunces, now they've suddenly become nihilists.</h1></div>
-  <div class="grid-container">
+<body>
+  <!--  CRT effect over the whole screen -->
+  <div class="crt"></div>
+  <!--  Heading -->
+  <div style="padding-top:6px">
+    <h1 align="center" style="font-family:'Courier New';font-size:30px"> *:･ﾟ｡ previously they were simply dunces, now they've suddenly become nihilists *ੈ✩‧₊˚</h1>
+    <h3 align="right"  style="font-family:'Courier New';font-size:17px; padding-right:220px; margin-top: -20px;"> pavel petrovitch </h3>
+  </div>
+  
+  <!--  WINDOWS (The "Sub-pages") -->
+  <!--  Unfortunately html does not support calling other html into the code and github pages does not support php the typical solution to this. -->
+  <div class="grid-container" style="margin-top: -20px">
+    <div class="window left-panel">
+      <h1> im a topologist now</h1>
+    <h2>basic topology notes</h2>
+      <ul>
+        <li><a href="Notes\Research\PhD\LES-Homotopy.pdf">proof of the les for a fibration</a></li>
+        <li><a href="Notes\Research\PhD\Stable-things.pdf">defining stable homotopy groups</a></li>
+        <li><a href="Notes\Research\PhD\Graded-chains.pdf">the adjunction between the category of chains and graded abelian groups</a></li>
+        <li><a href="Notes\Research\PhD\Homology.pdf">homology summary</a></li>
+        <li><a href="Notes\Research\PhD\Cohomology.pdf">cohomology summary</a></li>
+        <li><a href="Notes\Research\PhD\pontryagin_construction.pdf">pontryagin construction</a></li>
+        <li><a href="Notes\Research\PhD\All_bundle_are_pullbacks.pdf">constructions of vector bundles</a></li>
+        <li><a href="Notes\Research\PhD\Types_of_Surjection.pdf">comparison of different notions of bundles and fibrations</a></li>
+        <li><a href="Notes\Research\PhD\Notions_of_Orientation-1.pdf">comparison of different notions of orientations</a></li>
+        <li><a href="Notes\Research\PhD\van_kampen.pdf">becoming simply connected via van kampens.</a></li>
+        <li><a href="Notes\Research\PhD\Smooth_structures.pdf">smooth structures on discs and spheres, their connections to the h-cobordism theorem and diffeomorphisms of discs.</a></li>
+        <li><a href="Notes\Research\PhD\handle_attachment.pdf">examples of handle attachments.</a></li>
+        <li><a href="Notes\Research\PhD\linear_alg_of_handles.pdf">linear algebra of handle attachments.</a></li>
+        <li><a href="Notes\Research\PhD\spectra_summary.pdf">summary of the key facts about spectra.</a></li>
+        <li><a href="Notes\Research\PhD\spectral_sequences.pdf">definition of a spectral sequence.</a></li>
+        <li><a href="Notes\Research\PhD\Spectral_Sequences_Examples.pdf">examples of the serre spectral sequence.</a></li>
+      </ul>
+      
+      <h3>\(\infty\)-categories</h3>
+      <ul>
+        <li><a href="Notes\Research\PhD\Three_Nerves.pdf">Motivation via three nerve functors</a></li>
+        <li><a href="Notes\Research\PhD\Homotopy_hypothesis.pdf">Motivation via the homotopy hypothesis</a></li>
+        <li><a href="Notes\Research\PhD\Model_categories_as_infinity_categories.pdf">Motivation via model categories</a></li>
+      </ul>
 
-    
-    
-    
-    <div class="grid-item">
-      <h1> Im A Topologist Now</h1>
-      <h2>Notes</h2>
+    <h2>notes on the literature</h2>
+    <ul>
+        <li><a href="Notes\Research\PhD\almost_parallelizable_numbers.pdf">notes on the order of the group of homotopy spheres.</a></li>
+        <li><a href="Notes\Research\PhD\Waldhausen_K_theory.pdf">defining higher k theory (waldhausen construction).</a></li>
+        <li><a href="Notes\Research\PhD\rational_homotopy_groups_of_discs.pdf">a sketch of the computation of the rational homotopy type of the space of diffeomorphisms of a disc.</a></li>
+        <li><a href="Notes\Research\PhD\Cerf.pdf">how the homotopy groups of the concordance space are related to psuedo-isotopy (cerfs theorem).</a></li>
+        <li><a href="Notes\Research\PhD\fundamental_group_of_concordance.pdf">some computations of the homotopy groups of the space of concordances.</a></li>
+        <li><a href="Notes\Research\PhD\Gromoll_filtration.pdf">the geometry of the gromoll filtration, in terms of the existence of a fibration.</a></li>
+        <li><a href="Notes\Research\PhD\parametrising_h_cobordisms.pdf">notes on the parametrised h-cobordism theorem and the definition of \(\mathrm{Wh}^{\mathrm{Diff}}\).</a></li>
+        <li><a href="Notes\Research\PhD\concordance_obstruction.pdf">summary of wei wangs notes on the gromoll filtration.</a></li>
+    </ul>
+    <h3>numerics</h3>
       <ul>
-        <li><a href="Notes\Research\PhD\LES-Homotopy.pdf">Proof of the LES for a fibration</a></li>
-        <li><a href="Notes\Research\PhD\Stable-things.pdf">Defining stable homotopy groups</a></li>
-        <li><a href="Notes\Research\PhD\Graded-chains.pdf">The adjunction between the category of chains and graded abelian groups</a></li>
-        <li><a href="Notes\Research\PhD\Homology.pdf">Homology Summary</a></li>
-        <li><a href="Notes\Research\PhD\Cohomology.pdf">Cohomology Summary</a></li>
-        <li><a href="Notes\Research\PhD\pontryagin_construction.pdf">Pontryagin Construction</a></li>
-        <li><a href="Notes\Research\PhD\All_bundle_are_pullbacks.pdf">Constructions of vector bundles</a></li>
-        <li><a href="Notes\Research\PhD\Types_of_Surjection.pdf">Comparison of different notions of bundles and fibrations</a></li>
-        <li><a href="Notes\Research\PhD\Notions_of_Orientation-1.pdf">Comparison of different notions of orientations</a></li>
-        <li><a href="Notes\Research\PhD\van_kampen.pdf">Becoming simply connected via Van Kampens.</a></li>
-        <li><a href="Notes\Research\PhD\Smooth_structures.pdf">Smooth structures on discs and spheres, their connections to the h-cobordism theorem and diffeomorphisms of discs.</a></li>
-        <li><a href="Notes\Research\PhD\almost_parallelizable_numbers.pdf">Notes on the order of the group of homotopy spheres.</a></li>
-        <li><a href="Notes\Research\PhD\handle_attachment.pdf">Examples of handle attachments.</a></li>
-        <li><a href="Notes\Research\PhD\linear_alg_of_handles.pdf">Linear algebra of handle attachments.</a></li>
-        <li><a href="Notes\Research\PhD\Waldhausen_K_theory.pdf">Defining higher K theory (Waldhausen construction).</a></li>
-        <li><a href="Notes\Research\PhD\spectra_summary.pdf">Summary of the key facts about Spectra.</a></li>
-        <li><a href="Notes\Research\PhD\spectral_sequences.pdf">Definition of a spectral sequence.</a></li>
-        <li><a href="Notes\Research\PhD\Spectral_Sequences_Examples.pdf">Examples of the Serre spectral sequence.</a></li>
-        <li><a href="Notes\Research\PhD\rational_homotopy_groups_of_discs.pdf">A sketch of the computation of the rational homotopy type of the space of diffeomorphisms of a disc.</a></li>
-        <li><a href="Notes\Research\PhD\Cerf.pdf">How the homotopy groups of the concordance space are related to psuedo-isotopy (Cerfs theorem).</a></li>
-        <li><a href="Notes\Research\PhD\K_theory_of_the_integers.pdf">Basic facts about \(K(\mathbb{Z})\).</a></li>
-        <li><a href="Notes\Research\PhD\fundamental_group_of_concordance.pdf">Some computations of the homotopy groups of the space of concordances.</a></li>
-        <li><a href="Notes\Research\PhD\Gromoll_filtration.pdf">The geometry of the Gromoll filtration, in terms of the existence of a fibration.</a></li>
-        <li><a href="Notes\Research\PhD\parametrising_h_cobordisms.pdf">Notes on the parametrised H-cobordism theorem and the definition of \(\mathrm{Wh}^{\mathrm{Diff}}\).</a></li>
-        <li><a href="Notes\Research\PhD\concordance_obstruction.pdf">Summary of Wei Wangs notes on the Gromoll filtration.</a></li>
-        <li><a href="Notes\Research\PhD\Homotopy_groups_of_Concordance.pdf">Computation of the first 17 - 19 homotopy groups of the Whitehead space, concordance groups and h-cobordism space.</a></li>
-        <li><a href="Notes\Research\PhD\Burghelea_Lashof_mod_p_behaviour.pdf">Some numerics from the work of Burghelea and Lashof.</a></li>
+        <li><a href="Subpages\concordance.html"> homotopy groups of the concordance space. </a></li>
+        <li><a href="Subpages\diff_disc.html"> homotopy groups of the space of diffeomorphisms of the disc. </a></li>
+        <li><a href="Notes\Research\PhD\Burghelea_Lashof_mod_p_behaviour.pdf">some numerics from the work of burghelea and lashof.</a></li>
+        <li><a href="Notes\Research\PhD\Homotopy_groups_of_Concordance.pdf">computation of the first 17 - 19 homotopy groups of the whitehead space, concordance groups and h-cobordism space.</a></li>
+        <li><a href="Notes\Research\PhD\K_theory_of_the_integers.pdf">basic facts about \(K(\mathbb{Z})\).</a></li>
 
       </ul>
       
-      <h3>Three reasons for \(\infty\)-categories</h3>
+    <h2>notes from talks</h2>
       <ul>
-        <li><a href="Notes\Research\PhD\Three_Nerves.pdf">Three Nerve functors</a></li>
-        <li><a href="Notes\Research\PhD\Homotopy_hypothesis.pdf">The homotopy hypothesis</a></li>
-        <li><a href="Notes\Research\PhD\Model_categories_as_infinity_categories.pdf">Model categories</a></li>
-      </ul>
-      
-      <h2>Notes from talks</h2>
-      <ul>
-        <li><a href="Notes\Research\PhD\GTSG_Talk__Characteristic_Classes.pdf">Characteristic classes and the signature theorem</a></li>
-        <li><a href="Notes\Research\PhD\discovering_the_signature_theorem.pdf">Reconstructing the signature theorem. Sort of finishing of the previous talk.</a></li>
-        <li><a href="Notes\Research\PhD\lightning_talk.pdf">A 5 minute "lightning talk" given in the unimelb topology seminar: Discussing KM results on homotopy spheres</a></li>
-      </ul>
-      
-      <h2>Notes from Seminar Our Group Ran on Atiyah-Singer Index Theorems</h2>
-      <ul>
-        <li><a href="Notes\Research\PhD\topological_index.pdf">Talk in the index theory reading group, defining the topological index.</a></li>
-        <li><a href="Notes\Research\PhD\notions_of_K_theory.pdf">Define the analytic index (and discussing some basic K theory preliminaries).</a></li>
-        <li><a href="Notes\Research\PhD\index_of_elliptic_operators_examples.pdf">Example computations for bundles over the point and circle.</a></li>
-      </ul>
-      
-      <h2>Useful Tables and Lists</h2>
-      <ul>
-        <li><a href="Subpages\concordance.html"> Homotopy groups of the concordance space. </a></li>
-        <li><a href="Subpages\diff_disc.html"> Homotopy groups of the space of diffeomorphisms of the disc. </a></li>
-      </ul>
+        <li><a href="Notes\Research\PhD\GTSG_Talk__Characteristic_Classes.pdf">characteristic classes and the signature theorem</a></li>
+        <li><a href="Notes\Research\PhD\discovering_the_signature_theorem.pdf">reconstructing the signature theorem. sort of finishing of the previous talk.</a></li>
+        <li><a href="Notes\Research\PhD\lightning_talk.pdf">a 5 minute "lightning talk" given in the unimelb topology seminar: discussing km results on homotopy spheres</a></li>
+        <li><a href="Notes\Research\PhD\topological_index.pdf">talk in the index theory reading group, defining the topological index.</a></li>
+        <li><a href="Notes\Research\PhD\notions_of_K_theory.pdf">define the analytic index (and discussing some basic k theory preliminaries).</a></li>
+        <li><a href="Notes\Research\PhD\index_of_elliptic_operators_examples.pdf">example computations for bundles over the point and circle.</a></li>
+      </ul>      
       
       
     </div>
 
-    <div class="grid-item">
-      <h1>Misc Notes: Recent at Top</h1>
+    <div class="window middle-top">
+      <h1>misc notes</h1>
        <!-- <iframe src="https://rilem.atabook.org/" title="Guest Book" width="100%" height="90%"></iframe> -->
-
+    <h2>recent notes</h2>
       <ul>
-        <li><a href="Notes\Research\PhD\group_extensions.pdf"> Extension problems from exact sequences.</a></li>
-        <li><a href="Notes\Research\PhD\particle_physics.pdf"> My understanding of QFT.</a></li>
-        <li><a href="Notes\Research\PhD\griffiths_electrodynamics.pdf"> My understanding of electrodynamics.</a></li>
-        <li><a href="Notes\Research\PhD\QM_summary.pdf"> My understanding of quantum mechanics.</a></li>
-        <li><a href="Notes\Research\PhD\localising_groups.pdf"> Recovering a group from its local pieces .</a></li>
-        <li><a href="Notes\Research\PhD\non_motivic_homotopy_theory.pdf"> Homotopy theory of Schemes.</a></li>
-        <li><a href="Notes\Research\PhD\integration_on_manifolds.pdf"> Review of basic calculus.</a></li>
-        <li><a href="Notes\Research\PhD\orbit_stabiliser_theorem.pdf"> Orbit stabiliser theorem.</a></li>
-        <li><a href="Notes\Research\PhD\full_rank.pdf"> Column space and full rank.</a></li>
-        <li><a href="Notes\Research\PhD\applied_functional_analysis.pdf"> Some basic examples of spectrum of operators.</a></li>
-        <li><a href="Notes\Research\PhD\Bruhat_decomposition.pdf"> The Bruhat decomposition is just linear algebra.</a></li>
-        <li><a href="Notes\Research\PhD\eigenvalues_and_isomorphisms.pdf"> Basic eigenvalue notes.</a></li>
-        <li><a href="Notes\Research\PhD\Galois_descent.pdf"> The equivalence of categories between vector spaces K/k with a Galois action.</a></li>
-        <li><a href="Notes\Research\PhD\analytic_vs_smooth_Lie_groups.pdf">The equivalence of categories between real and analytic Lie groups</a></li>
-        <li><a href="Notes\Research\PhD\reductive_Lie_groups_and_reductive_algebraic_groups.pdf">The equivalence of categories between (representations) of reductive Lie groups and reductive LAG's.</a></li>
-        <li><a href="Notes\Research\PhD\Lie_algebras_and_Lie_groups.pdf"> The equivalence of categories between Lie groups and Lie algebras.</a></li>
+        <li><a href="Notes\Research\PhD\Lie_algebras_and_Lie_groups.pdf"> the equivalence of categories between lie groups and lie algebras.</a></li>
+        <li><a href="Notes\Research\PhD\reductive_Lie_groups_and_reductive_algebraic_groups.pdf">the equivalence of categories between (representations) of reductive lie groups and reductive lag's.</a></li>
+        <li><a href="Notes\Research\PhD\analytic_vs_smooth_Lie_groups.pdf">the equivalence of categories between real and analytic lie groups</a></li>
+        <li><a href="Notes\Research\PhD\Galois_descent.pdf"> the equivalence of categories between vector spaces k/k with a galois action.</a></li>
+        <li><a href="Notes\Research\PhD\eigenvalues_and_isomorphisms.pdf"> basic eigenvalue notes.</a></li>
+        <li><a href="Notes\Research\PhD\Bruhat_decomposition.pdf"> the bruhat decomposition is just linear algebra.</a></li>
+        <li><a href="Notes\Research\PhD\applied_functional_analysis.pdf"> some basic examples of spectrum of operators.</a></li>
+        <li><a href="Notes\Research\PhD\full_rank.pdf"> column space and full rank.</a></li>
+        <li><a href="Notes\Research\PhD\orbit_stabiliser_theorem.pdf"> orbit stabiliser theorem.</a></li>
+        <li><a href="Notes\Research\PhD\integration_on_manifolds.pdf"> review of basic calculus.</a></li>
+        <li><a href="Notes\Research\PhD\non_motivic_homotopy_theory.pdf"> homotopy theory of schemes.</a></li>
+        <li><a href="Notes\Research\PhD\localising_groups.pdf"> recovering a group from its local pieces .</a></li>
+        <li><a href="Notes\Research\PhD\group_extensions.pdf"> extension problems from exact sequences.</a></li>
       </ul>
 
+    <h2>notes to write / in progress</h2>
+      <ul>
+        <li>history of automorphic forms</li>
+        <li>finish my intro to langlands work by tying together the two histories</li>
+        <li>companion to langlands eisenstein series paper</li>
+        <li>lie groups, lie algebras and algebraic groups: comparison and all the subgroups and classifications</li>
+        <li>elliptic integrals and algebraic geometry</li>
+      </ul>
+    
+    <h2>formulas i forget</h2>
+        \[\pi_i(X)\cong \pi_{i-1}(\Omega X)\cong \pi_{i+1}(BX)\]
+    </div>
+
+    <div class="window middle-bottom">
+      <h1>history, philosophy, science and coding</h1>
+    <h2>the history of mathematics</h2>
+      <ul>
+        <li><a href="Notes\Research\PhD\Euclid.pdf"> (300 bc) euclid</a></li>   
+        <li><a href="Notes\Research\PhD\Diophantus.pdf"> (250 ad) diophantus</a></li>   
+        <li><a href="Notes\Research\PhD\Descartes.pdf"> (1637 ad) descartes geometry </a></li>   
+        <li><a href="Notes\Research\PhD\Liebniz.pdf"> (1684 ad) liebniz calculus </a></li>   
+        <li><a href="Notes\Research\PhD\Euler.pdf"> (1748 ad) eulers intro to the infinite </a></li>   
+        <li><a href="Notes\Research\PhD\Early_19th_Century.pdf"> (1800 - 1850 ad) gauss, cauchy, louiville, abel and galois </a></li>   
+        <li><a href="Notes\Research\PhD\Late_19th_Century.pdf"> (1850 - 1900 ad) dedekind and riemann </a></li>   
+        <li><a href="Notes\Research\PhD\Platos_ghost.pdf"> (1880 - 1920 ad) notes on grays "platos ghost" </a></li>   
+      </ul>
+
+      <h2>physics</h2>
+      <ul>
+        <li><a href="Notes\Research\PhD\particle_physics.pdf"> my understanding of qft.</a></li>
+        <li><a href="Notes\Research\PhD\griffiths_electrodynamics.pdf"> my understanding of electrodynamics.</a></li>
+        <li><a href="Notes\Research\PhD\QM_summary.pdf"> my understanding of quantum mechanics.</a></li>        
+        <li><a href="https://en.wikipedia.org/wiki/Norton%27s_dome">nortonian mechanics</a></li>
+      </ul>
+    
+      <h2>code</h2>
+      <ul>
+        <li><a href="Subpages\arxivTrends.html">an analysis of the popularity of mathematical topics via the arxiv</a></li>
+        <li><a href="https://github.com/rileymoriss/Finite-Varieties">a terribly ugly way of plotting elliptic curves or varieties in one variable over finite fields</a></li>
+        <li><a href="https://github.com/rileymoriss/Theorem-Generator">you want a theorem, you got a theorem; raw zfc theorem generator</a></li>
+      </ul>
       
-
-
-      <h2>Notes to Write / In Progress</h2>
+      <h2>blog posts</h2>
       <ul>
-        <li>History of automorphic forms</li>
-        <li>Finish my intro to Langlands work by tying together the two histories</li>
-        <li>Companion to Langlands Eisenstein series paper</li>
-        <li>Lie groups, Lie algebras and algebraic groups: comparison and all the subgroups and classifications</li>
-        <li>Elliptic integrals and algebraic geometry</li>
+        <li><a href="Subpages\JTB.html">the misrepresentation of jtb in intro philosophy courses</a></li>
+        <li><a href="Subpages\models.html">the informality of model theory</a></li>
+        <li><a href="Subpages\exposition.html">reminders on how to write better</a></li>
+      </ul>
+      
+    </div>
+
+    <div class="window right-top">
+        <h1>older notes and research interests</h1>
+
+    <h2>number theory</h2>
+      <h3>thesis:</h3>
+      <ul>
+        <li><a href="Notes\Research\main.pdf">a paired back and revised version</a></li>
+        <li><a href="Notes\Research\main_old.pdf">my initial one</a></li>
+      </ul>
+      <h3>etymology:</h3>
+      <ul>
+        <li><a href="Notes\Research\ramification.pdf">ramification in number theory and geometry</a></li>
+        <li><a href="Notes\Research\analytic_spec.pdf">a short note on the analytic origins of spec</a></li>
+        <li><a href="Notes\Research\parabolics_et.pdf">parabolics</a></li>
+        <li><a href="Notes\Research\torus_et.pdf">torus</a></li>
+        <li><a href="Notes\Research\constant_terms_et.pdf">constant terms in the theory of automorphic forms</a></li>
+      </ul>
+      <h3>notes:</h3>
+      <ul>
+        <li><a href="Notes\Research\smoothness.pdf">some (bad) notes on the idea of smoothness</a></li>
+        <li><a href="Notes\Research\THESIS.pdf">adele definition</a></li>
+        <li><a href="Notes\Research\Adelic Topology.pdf">adelic topology</a></li>
+        <li><a href="Notes\Research\AutomorphicForms.pdf">defining an automorphic form</a></li>
+        <li><a href="Notes\Research\groupSchemes (2).pdf">group scheme summary</a></li>
+        <li><a href="Notes\Research\alg_geometry.pdf">basic algebraic geometry</a></li>
+        <li><a href="Notes\Research\ConstantTerms.pdf">very explicit computations of the constant term of an eisenstein series</a></li>
+        <li><a href="Notes\Research\LanglandsConjectures.pdf">a sketch of the langlands conjectures</a></li>
+      </ul>
+      <h3>notes from talks</h3>
+      <ul>
+        <li><a href="Notes\Research\ReductiveGroupsTalks.pdf">definition and classification of reductive groups</a></li>
+        <li><a href="Notes\Research\AutomorphicForms (2).pdf">definition of automorphic forms; explanation of modular forms as a special case</a></li>
+        <li><a href="Notes\Research\coherence.pdf">a talk on coherent sheaves in a student reading group</a></li>
+        <li><a href="Notes\Research\EtaleSite.pdf">etale site and etale cohomology</a></li>
+        <li><a href="Notes\Research\beamer_talk_final-v2.pdf">slides from my talk describing my masters research</a></li>
       </ul>
 
-      \[\pi_i(X)\cong \pi_{i-1}(\Omega X)\cong \pi_{i+1}(BX)\]
+      <h2>linear logic</h2>
+      <h3>my work:</h3>
+      <ul>
+        <li><a href="Notes\Research\fixedpointFinal.pdf">fixed point theorem for last</a></li>
+        <li><a href="Notes\Research\pure math seminar script.pdf">russell's paradox and polynomials: a talk at the
+            university of melbourne student seminar 2023</a></li>
+        <li><a href="Notes\Research\combinators.pdf">russell's paradox and the y combinator</a></li>
+        <li><a href="Notes\Research\hilbertSpaces.pdf">sweedler semantics and the category of hilbert spaces</a></li>
+      </ul>
+      <h3>notes on the literature</h3>
+      <ul>
+        <li><a href="Notes\Research\diagonal arguments.pdf">lawveres fixed point theorem</a></li>
+        <li><a href="Notes\Research\categorical logic.pdf">goldblatts "categorical logic"</a></li>
+        <li><a href="Notes\Research\differentialLL.pdf">ll, dill and stratified ll</a></li>
+        <li><a href="Images\differentialLL.png">flow diagram of the proof of cut elimination referenced in the above</a></li>
+      </ul>
+
+      <h2>university notes: in rough order of quality</h2>
+      <ul>
+        <li><a href="Notes\Uni\groupTheory.pdf">geometric groups theory</a></li>
+        <li><a href="Notes\Uni\funcNotesTex.pdf">functional analysis</a></li>
+        <li><a href="Notes\Uni\difGeo.pdf">differential geometry</a></li>
+        <li><a href="Notes\Uni\measureTheory.pdf">measure theory</a></li>
+        <li><a href="Notes\Uni\riemannNotes.pdf">complex analysis and riemann surfaces</a> notes and a <a
+            href="Notes\Uni\riemannNotes.pdf">summary sheet</a></a></li>
+        <li><a href="Notes\Uni\repSummary.pdf">representation theory</a></li>
+        <li><a href="Notes\Uni\catsSummary.pdf">groups, categories and homological algebra</a></li>
+        <li><a href="Notes\Uni\VectCalc.pdf">vector calculus</a></li>
+        <li><a href="Notes\Uni\Complex Analysis The Complete Saga.pdf">complex analysis</a></li>
+        <li><a href="Notes\Uni\probForInf.pdf">probability for inference</a></li>
+        <li><a href="Notes\Uni\Summary Metric.pdf">metric and hilbert spaces</a></li>
+        <li><a href="Notes\Uni\Alg Top  Summary.pdf">algebraic topology</a></li>
+      </ul>
+    </div>
+
+    <div class="window right-bottom">
+      <p>i stole the background and crt effect from <a href="https://angs-corner.nekoweb.org/">angs-corner</a></p>
+      <p>some real mathematicians have nice websites with helpful notes</p>
+      <ul>
+        <li><a href="https://virtualmath1.stanford.edu/~conrad/">brian conrad: has many notes from courses and for the express purpose of exposition</a></li>
+        <li><a href="https://www-users.cse.umn.edu/~garrett/">paul garrett: lots of notes.</a></li>
+      </ul>
+
+      <div class="window marquee-window" style="border: none">    
+        <div class="marquee-container">
+          <div class="marquee-track">
+              
+              <img style="width: 100px; height: auto;" src=".\stickers\3.5mm.gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\blog (4).gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\e7.png" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\nyan.gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\pastel (19).png" alt="Image 1">
+
+              <!-- Repeat the images to create a continuous loop -->
+              <img style="width: 100px; height: auto;" src=".\stickers\3.5mm.gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\blog (4).gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\e7.png" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\nyan.gif" alt="Image 1">
+              <img style="width: 100px; height: auto;" src=".\stickers\pastel (19).png" alt="Image 1">
+              
+          </div>
+        </div>
       </div>
 
-    <div class="grid-item">
-      <h1>NUMBER THEORY</h1>
-      
-      <h2>Thesis:</h2>
-      <ul>
-        <li><a href="Notes\Research\main.pdf">A paired back and revised version</a></li>
-        <li><a href="Notes\Research\main_old.pdf">My initial one</a></li>
-      </ul>
-      <h2>Etymology:</h2>
-      <ul>
-        <li><a href="Notes\Research\ramification.pdf">Ramification in Number Theory and Geometry</a></li>
-        <li><a href="Notes\Research\analytic_spec.pdf">A short note on the analytic origins of Spec</a></li>
-        <li><a href="Notes\Research\parabolics_et.pdf">Parabolics</a></li>
-        <li><a href="Notes\Research\torus_et.pdf">Torus</a></li>
-        <li><a href="Notes\Research\constant_terms_et.pdf">Constant terms in the theory of automorphic forms</a></li>
-      </ul>
-      <h2>Notes:</h2>
-      <ul>
-        <li><a href="Notes\Research\smoothness.pdf">Some (bad) notes on the idea of smoothness</a></li>
-        <li><a href="Notes\Research\THESIS.pdf">Adele Definition</a></li>
-        <li><a href="Notes\Research\Adelic Topology.pdf">Adelic Topology</a></li>
-        <li><a href="Notes\Research\AutomorphicForms.pdf">Defining an Automorphic Form</a></li>
-        <li><a href="Notes\Research\groupSchemes (2).pdf">Group Scheme Summary</a></li>
-        <li><a href="Notes\Research\alg_geometry.pdf">Basic Algebraic Geometry</a></li>
-        <li><a href="Notes\Research\ConstantTerms.pdf">Very Explicit Computations of the Constant Term of an Eisenstein
-            Series</a></li>
-        <li><a href="Notes\Research\LanglandsConjectures.pdf">A Sketch of the Langlands Conjectures</a></li>
-      </ul>
-      <h2>Notes From Talks</h2>
-      <ul>
-        <li><a href="Notes\Research\ReductiveGroupsTalks.pdf">Definition and Classification of Reductive Groups</a></li>
-        <li><a href="Notes\Research\AutomorphicForms (2).pdf">Definition of Automorphic Forms; explanation of modular
-            forms as a special case</a></li>
-        <li><a href="Notes\Research\coherence.pdf">A Talk on Coherent Sheaves in a Student Reading Group</a></li>
-        <li><a href="Notes\Research\EtaleSite.pdf">Etale site and Etale Cohomology</a></li>
-        <li><a href="Notes\Research\beamer_talk_final-v2.pdf">Slides from my talk describing my masters research</a>
-        </li>
-      </ul>
-
     </div>
-
-  <div class="grid-item">
-      <h1>LINEAR LOGIC</h1>
-      <h2>My Work:</h2>
-      <ul>
-        <li><a href="Notes\Research\fixedpointFinal.pdf">Fixed Point Theorem for LAST</a></li>
-        <li><a href="Notes\Research\pure math seminar script.pdf">Russell's Paradox and Polynomials: A talk at the
-            University of Melbourne student seminar 2023</a></li>
-        <li><a href="Notes\Research\combinators.pdf">Russell's Paradox and the Y Combinator</a></li>
-        <li><a href="Notes\Research\hilbertSpaces.pdf">Sweedler Semantics and the category of Hilbert spaces</a></li>
-      </ul>
-      <h2>Notes on the Literature</h2>
-      <ul>
-        <li><a href="Notes\Research\diagonal arguments.pdf">Lawveres Fixed Point Theorem</a></li>
-        <li><a href="Notes\Research\categorical logic.pdf">Goldblatts "Categorical Logic"</a></li>
-        <li><a href="Notes\Research\differentialLL.pdf">LL, DiLL and Stratified LL</a></li>
-        <li><a href="Images\differentialLL.png">Flow Diagram of the Proof of Cut Elimination Referenced in the Above
-          </a></li>
-      </ul>
   </div>
-
-    <div class="grid-item">
-      <h1>UNIVERSITY NOTES</h1>
-      <h2>High Quality and Pretty</h2>
-      <ul>
-        <li><a href="Notes\Uni\groupTheory.pdf">Geometric Groups Theory</a></li>
-        <li><a href="Notes\Uni\funcNotesTex.pdf">Functional Analysis</a></li>
-        <li><a href="Notes\Uni\difGeo.pdf">Differential Geometry</a></li>
-        <li><a href="Notes\Uni\measureTheory.pdf">Measure Theory</a></li>
-        <li><a href="Notes\Uni\riemannNotes.pdf">Complex Analysis and Riemann Surfaces</a> notes and a <a
-            href="Notes\Uni\riemannNotes.pdf">summary sheet</a></a></li>
-        <li><a href="Notes\Uni\repSummary.pdf">Representation Theory</a></li>
-      </ul>
-
-      <h2>High Quality and Ugly</h2>
-      <ul>
-        <li><a href="Notes\Uni\catsSummary.pdf">Groups, Categories and Homological Algebra</a></li>
-      </ul>
-
-      <h2>Garbage</h2>
-      <ul>
-        <li><a href="Notes\Uni\VectCalc.pdf">Vector Calculus</a></li>
-        <li><a href="Notes\Uni\Complex Analysis The Complete Saga.pdf">Complex Analysis</a></li>
-        <li><a href="Notes\Uni\probForInf.pdf">Probability for Inference</a></li>
-        <li><a href="Notes\Uni\Summary Metric.pdf">Metric and Hilbert Spaces</a></li>
-        <li><a href="Notes\Uni\Alg Top  Summary.pdf">Algebraic Topology</a></li>
-      </ul>
-  </div>
-
-  <div class="grid-item">
-      <h1>RANDOM STUFF</h1>
-    <h2>The History of Mathematics</h2>
-      <ul>
-        <li><a href="Notes\Research\PhD\Euclid.pdf"> (300 BC) Euclid</a></li>   
-        <li><a href="Notes\Research\PhD\Diophantus.pdf"> (250 AD) Diophantus</a></li>   
-        <li><a href="Notes\Research\PhD\Descartes.pdf"> (1637 AD) Descartes Geometry </a></li>   
-        <li><a href="Notes\Research\PhD\Liebniz.pdf"> (1684 AD) Liebniz Calculus </a></li>   
-        <li><a href="Notes\Research\PhD\Euler.pdf"> (1748 AD) Eulers Intro to the Infinite </a></li>   
-        <li><a href="Notes\Research\PhD\Early_19th_Century.pdf"> (1800 - 1850 AD) Gauss, Cauchy, Louiville, Abel and Galois </a></li>   
-        <li><a href="Notes\Research\PhD\Late_19th_Century.pdf"> (1850 - 1900 AD) Dedekind and Riemann </a></li>   
-        <li><a href="Notes\Research\PhD\Platos_ghost.pdf"> (1880 - 1920 AD) Notes on Grays "Platos Ghost" </a></li>   
-        
-      </ul>
-    
-      <h2>Code</h2>
-      <ul>
-        <li><a href="Subpages\arxivTrends.html">An analysis of the popularity of mathematical topics via the ArXiv</a></li>
-        <li><a href="https://github.com/rileymoriss/Finite-Varieties">A terribly ugly way of plotting elliptic curves or varieties in one variable over finite fields</a></li>
-        <li><a href="https://github.com/rileymoriss/Theorem-Generator">You want a theorem, you got a theorem; Raw ZFC theorem generator</a></li>
-      </ul>
-      
-
-
-      <h2>Blog Posts</h2>
-      <ul>
-        <li><a href="Subpages\JTB.html">The misrepresentation of JTB in intro philosophy courses</a></li>
-        <li><a href="Subpages\models.html">The informality of model theory</a></li>
-        <li><a href="Subpages\exposition.html">Reminders on how to write better</a></li>
-      </ul>
-    <h2>Links</h2>
-      <ul>
-        <li><a href="https://virtualmath1.stanford.edu/~conrad/">Brian Conrad: Has many notes from courses and for the express purpose of exposition</a></li>
-        <li><a href="https://www-users.cse.umn.edu/~garrett/">Paul Garrett: Lots of notes.</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Norton%27s_dome">Nortonian mechanics</a></li>
-      </ul>
-    </div>
-    
-  </div>
-
 </html>

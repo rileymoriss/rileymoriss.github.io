@@ -13,6 +13,166 @@
     border: 2px solid #000000;
   }
 
-  body {
-    background-image: "background.jpg";
-  }
+body {
+  background-image: url("./Images/starbg2.gif");
+  color: wheat;
+  font-family: "VT323", monospace;
+  margin: 0;
+  line-height: 120%;
+  padding: 20px;
+padding-bottom: 100px; /* Add EXTRA padding at the bottom specifically */
+  /* CRITICAL: Fixes the page height to the screen size */
+  height: 100vh; 
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 2. THE MAIN GRID CONTAINER */
+        .grid-container {
+            display: grid;
+            /* Three equal columns */
+            grid-template-columns: 1fr 1fr 1fr; 
+            /* Two equal rows (for the split columns) */
+            grid-template-rows: 1fr 1fr;      
+            
+            /* Make the grid fill the available vertical space */
+            height: 100%; 
+            
+            /* Gap between windows */
+            gap: 15px;    
+        }
+
+        /* 3. WINDOW STYLING (The "Sub-pages") */
+        .window {
+            border: 2px solid white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            
+            /* CRITICAL: Allows scroll inside this box only */
+            overflow-y: auto; 
+        }
+
+        /* 4. PLACEMENT LOGIC */
+        
+        /* Left Column: Spans both rows (Full Height) */
+        .left-panel {
+            grid-column: 1;
+            grid-row: 1 / 3; /* Spans from line 1 to 3 (all rows) */
+        }
+
+        /* Middle Column Top */
+        .middle-top {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        /* Middle Column Bottom */
+        .middle-bottom {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        /* Right Column Top */
+        .right-top {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        /* Right Column Bottom */
+        .right-bottom {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  color: antiquewhite;
+}
+h2 {
+  font-size: 20px;
+  color: antiquewhite;
+}
+h3 {
+  font-size: 17px;
+  color: antiquewhite;
+}
+
+/* CRT FILTER */
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 3;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 3;
+  background-size:
+    100% 2px,
+    3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
+
+/* 1. The Container (Hides the overflow) */
+.marquee-container {
+    width: 100%;
+    overflow: hidden; /* Hides images as they move off-screen */
+    white-space: nowrap; /* Forces images to stay in a horizontal line */
+    position: relative;
+}
+
+/* 2. The Track (Moves the images) */
+.marquee-track {
+    display: inline-block;
+    animation: scroll-left 7s linear infinite; /* Adjust '10s' for speed */
+}
+
+/* 3. Image Styling */
+.marquee-track img {
+    height: 100px; /* Set a fixed height so they match */
+    margin-right: 10px; /* Space between images */
+    vertical-align: middle;
+    border: 2px solid black; /* Optional: adds a border to photos */
+}
+
+/* 4. The Animation Logic */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Move left by 50% of the track's width.
+           Because we doubled the images, 50% is exactly one full set. 
+           When it hits -50%, it snaps back to 0 without anyone noticing. */
+        transform: translateX(-50%); 
+    }
+}
+
+/* OPTIONAL: Pause scrolling when hovering */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
