@@ -3,3 +3,4 @@ A personal webpage to host all my notes on things that might be useful to my fut
 - I would like to have some more art or something, make it visually interesting. more ascii flourishes seems good.
 - I had the idea to make it look like a new bulletin, scrolling text, flashing banners, anchor person in the middle.
 - Another idea is that it looks like a book and the pages are litterally the pages and there is a page turning animation or something
+- The tunnel-ise my site
